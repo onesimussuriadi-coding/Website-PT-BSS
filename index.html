@@ -3,87 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PT Banggai Sentral Sulawesi - Konstruksi & General Service</title>
-    <!-- Tailwind CSS untuk Desain Modern -->
+    <title>Portal Internal - PT Banggai Sentral Sulawesi</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-slate-100 text-slate-800 font-sans antialiased">
 
-    <!-- Header / Navbar -->
-    <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-md">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-xl font-bold tracking-wider">
-                PT <span class="text-orange-500">BSS</span>
-            </div>
-            <nav class="hidden md:flex space-x-8 text-sm font-medium">
-                <a href="#home" class="hover:text-orange-400 transition">Beranda</a>
-                <a href="#about" class="hover:text-orange-400 transition">Tentang Kami</a>
-                <a href="#services" class="hover:text-orange-400 transition">Layanan</a>
-                <a href="#contact" class="hover:text-orange-400 transition">Kontak</a>
-            </nav>
-            <div>
-                <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-md text-sm font-semibold transition shadow">Hubungi Kami</a>
+    <!-- ========================================== -->
+    <!-- 1. NAVBAR & DROPDOWN PORTAL APLIKASI -->
+    <!-- ========================================== -->
+    <nav class="bg-slate-900 border-b border-slate-800 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo & Nama Perusahaan -->
+                <div class="flex items-center space-x-3">
+                    <span class="text-xl font-bold tracking-wider text-orange-500">PT BSS</span>
+                    <span class="text-sm text-slate-300 hidden sm:inline border-l border-slate-700 pl-3">Portal Internal Manajemen</span>
+                </div>
+
+                <!-- Menu Navigasi & Dropdown -->
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="text-sm font-medium text-slate-300 hover:text-white px-3 py-2 rounded-md">Beranda</a>
+                    
+                    <!-- Dropdown Portal Aplikasi -->
+                    <div class="relative group">
+                        <button class="flex items-center space-x-1 text-sm font-medium bg-orange-600 hover:bg-orange-500 text-white px-4 py-2 rounded-lg transition shadow-sm">
+                            <span>Portal Aplikasi</span>
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <!-- Menu Dropdown -->
+                        <div class="absolute right-0 mt-2 w-56 bg-white text-slate-800 rounded-xl shadow-xl py-2 hidden group-hover:block border border-slate-100 z-50">
+                            <div class="px-4 py-2 text-xs font-semibold text-slate-400 uppercase tracking-wider">Akses Cepat Sistem</div>
+                            <a href="https://rapat.ptbsssatu.id" target="_blank" class="flex items-center px-4 py-2.5 text-sm hover:bg-orange-50 hover:text-orange-600 transition">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span> Portal Rapat
+                            </a>
+                            <a href="https://kontrak.ptbsssatu.id" target="_blank" class="flex items-center px-4 py-2.5 text-sm hover:bg-orange-50 hover:text-orange-600 transition">
+                                <span class="w-2 h-2 bg-emerald-500 rounded-full mr-2"></span> Pemantauan Kontrak
+                            </a>
+                            <a href="https://invoice.ptbsssatu.id" target="_blank" class="flex items-center px-4 py-2.5 text-sm hover:bg-orange-50 hover:text-orange-600 transition">
+                                <span class="w-2 h-2 bg-amber-500 rounded-full mr-2"></span> Portal Invoice
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="relative bg-slate-900 text-white py-24 md:py-32">
-        <div class="absolute inset-0 opacity-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d0fbb18f06f5?auto=format&fit=crop&q=80&w=1600');"></div>
-        <div class="container mx-auto px-6 relative z-10 max-w-4xl text-center">
-            <span class="bg-orange-500 text-xs uppercase tracking-widest font-semibold px-3 py-1 rounded-full">Mitra Industri Terpercaya</span>
-            <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight">Solusi Konstruksi, Pengadaan & Manpower Profesional</h1>
-            <p class="text-lg md:text-xl text-gray-300 mb-8">Melayani jasa konstruksi, sewa alat berat, general service, serta trust transport & manpower terpadu untuk mendukung proyek industri Anda.</p>
-            <div class="flex justify-center gap-4">
-                <a href="#services" class="bg-orange-500 hover:bg-orange-600 font-semibold px-8 py-3 rounded-md shadow-lg transition">Jelajahi Layanan</a>
-                <a href="#contact" class="bg-white hover:bg-gray-100 text-slate-900 font-semibold px-8 py-3 rounded-md shadow-lg transition">Konsultasi Proyek</a>
+
+    <!-- ========================================== -->
+    <!-- 2. BAGIAN VISI & MISI PERUSAHAAN -->
+    <!-- ========================================== -->
+    <section class="py-12 bg-white text-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Judul Utama -->
+            <div class="text-center mb-10">
+                <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">Visi & Misi Perusahaan</h1>
+                <p class="text-sm text-slate-500 mt-1">PT Banggai Sentral Sulawesi</p>
+            </div>
+
+            <!-- Kotak Vision -->
+            <div class="border-2 border-emerald-800 rounded-2xl p-6 md:p-8 mb-8 shadow-sm bg-slate-50/50">
+                <div class="text-center mb-4">
+                    <span class="inline-block border-b-2 border-emerald-800 pb-1 font-bold text-emerald-900 tracking-wider text-sm uppercase">VISION</span>
+                </div>
+                <p class="italic text-center text-slate-700 font-medium text-base md:text-lg mb-3">
+                    "To be one of excellence and reliable Contractor Company in Indonesia at the competitive price by culturing occupational Health, Safety and Environment in every activity."
+                </p>
+                <p class="text-center text-slate-600 text-sm leading-relaxed border-t border-slate-200 pt-3">
+                    Menjadi salah satu Perusahaan Kontraktor yang baik dan terpercaya di Indonesia pada tingkat harga yang bersaing dengan membudayakan keselamatan dan kesehatan kerja serta lingkungan disetiap aktivitasnya.
+                </p>
+            </div>
+
+            <!-- Kotak Mission -->
+            <div class="border-2 border-emerald-800 rounded-2xl p-6 md:p-8 mb-10 shadow-sm bg-slate-50/50">
+                <div class="text-center mb-6">
+                    <span class="inline-block border-b-2 border-emerald-800 pb-1 font-bold text-emerald-900 tracking-wider text-sm uppercase">MISSION</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-slate-700">
+                    <!-- Kolom Bahasa Inggris -->
+                    <div class="space-y-3">
+                        <ol class="list-decimal list-inside space-y-2 leading-relaxed">
+                            <li>To build and develop strong channel in marketing for domestic market;</li>
+                            <li>To build a strong and good Management team through Human Resources Development;</li>
+                            <li>To be one of excellence Contractor in Constructions and General Services;</li>
+                            <li>To be a part of Energy Industry Development in Eastern Part of Indonesia;</li>
+                            <li>To develop business diversification within 5 (five) years;</li>
+                            <li>To implement Quality Occupational Safety, Health and Environment Management System with properly.</li>
+                        </ol>
+                    </div>
+                    <!-- Kolom Bahasa Indonesia -->
+                    <div class="space-y-3 border-t md:border-t-0 md:border-l border-slate-200 pt-4 md:pt-0 md:pl-6">
+                        <ol class="list-decimal list-inside space-y-2 leading-relaxed">
+                            <li>Membangun dan mengembangkan jaringan pemasaran yang kuat untuk pasar domestic;</li>
+                            <li>Membangun suatu tim Manajemen yang kuat dan baik melalui pengembangan Sumber Daya Manusia;</li>
+                            <li>Menjadi salah satu Kontraktor yang baik dalam bidang Konstruksi dan Jasa Umum;</li>
+                            <li>Menjadi bagian dari pengembangan Industri Energi di bagian Timur Indonesia;</li>
+                            <li>Mengembangkan diversifikasi usaha dalam waktu 5 (lima) tahun mendatang;</li>
+                            <li>Melaksanakan Sistem Manajemen Mutu dan K3L (Keselamatan dan Kesehatan Kerja serta Lingkungan) dengan benar.</li>
+                        </ol>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-20 container mx-auto px-6">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-slate-900">Layanan Utama Kami</h2>
-            <p class="text-gray-600 mt-2">Komitmen pada standar keselamatan kerja (K3) dan kualitas operasional terbaik.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- Layanan 1 -->
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center font-bold text-xl mb-6">01</div>
-                <h3 class="text-xl font-bold mb-3 text-slate-900">Jasa Konstruksi</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">Pembangunan infrastruktur sipil, fasilitas industri, dan pekerjaan konstruksi terintegrasi.</p>
+
+    <!-- ========================================== -->
+    <!-- 3. MOTIVASI KERJA, BULETIN & GATEWAY APLIKASI -->
+    <!-- ========================================== -->
+    <section class="py-10 bg-slate-100 text-slate-800 border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Kotak Motivasi Kerja Berintegritas -->
+            <div class="bg-gradient-to-r from-slate-900 to-slate-800 text-white rounded-2xl p-6 md:p-8 shadow-xl mb-8 border-l-8 border-orange-500">
+                <div class="max-w-4xl">
+                    <span class="text-orange-400 font-semibold text-xs uppercase tracking-widest">Prinsip Kerja Korporat PT BSS</span>
+                    <h3 class="text-xl sm:text-2xl md:text-3xl font-bold mt-2 mb-3 leading-snug">
+                        "Bekerja dengan Integritas Tinggi, Menjunjung Kejujuran, Serta Efektif dan Efisien dalam Setiap Langkah Operasional."
+                    </h3>
+                    <p class="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed">
+                        Setiap tugas dan amanah yang diemban adalah wujud komitmen kita terhadap perusahaan dan mitra industri. Mari utamakan transparansi, ketepatan waktu, dan koordinasi yang solid untuk hasil kerja yang unggul dan membanggakan.
+                    </p>
+                </div>
             </div>
-            <!-- Layanan 2 -->
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center font-bold text-xl mb-6">02</div>
-                <h3 class="text-xl font-bold mb-3 text-slate-900">Sewa & Pengadaan</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">Penyediaan unit alat berat, vacuum truck, dan pengadaan logistik kebutuhan industri.</p>
-            </div>
-            <!-- Layanan 3 -->
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center font-bold text-xl mb-6">03</div>
-                <h3 class="text-xl font-bold mb-3 text-slate-900">General Service</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">Perawatan fasilitas, maintenance teknis, serta dukungan operasional proyek migas dan energi.</p>
-            </div>
-            <!-- Layanan 4 -->
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center font-bold text-xl mb-6">04</div>
-                <h3 class="text-xl font-bold mb-3 text-slate-900">Manpower & Transport</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">Penyediaan tenaga kerja profesional handal (*trust transport & manpower*) bersertifikasi.</p>
+
+            <!-- Grid Layout: Pengumuman & Akses Sistem Utama -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Kolom Kiri: Pengumuman & Info Terkini -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                    <div class="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
+                        <h4 class="font-bold text-base text-slate-900 flex items-center">
+                            <svg class="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
+                            Pengumuman & Info Terkini
+                        </h4>
+                        <span class="text-xs bg-orange-100 text-orange-700 px-2.5 py-1 rounded-full font-medium">Internal</span>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="p-3 bg-slate-50 rounded-xl border-l-4 border-blue-500">
+                            <span class="text-xs text-slate-500 block mb-1">Pemberitahuan Operasional</span>
+                            <p class="text-xs sm:text-sm font-medium text-slate-800">Pastikan seluruh laporan pemantauan kontrak dan administrasi mingguan diselesaikan tepat waktu sebelum penutupan siklus.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border-l-4 border-emerald-500">
+                            <span class="text-xs text-slate-500 block mb-1">Koordinasi Tim</span>
+                            <p class="text-xs sm:text-sm font-medium text-slate-800">Gunakan portal rapat internal untuk penjadwalan meeting dengan divisi terkait agar sinkronisasi terjaga.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Akses Cepat Aplikasi Internal (Gateway) -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                    <div class="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
+                        <h4 class="font-bold text-base text-slate-900 flex items-center">
+                            <svg class="w-5 h-5 text-emerald-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                            Akses Sistem Utama
+                        </h4>
+                        <span class="text-xs bg-emerald-100 text-emerald-700 px-2.5 py-1 rounded-full font-medium">Gateway</span>
+                    </div>
+                    <div class="grid grid-cols-1 gap-2.5">
+                        <a href="https://rapat.ptbsssatu.id" target="_blank" class="flex items-center justify-between p-3 rounded-xl border border-slate-200 hover:border-orange-500 hover:bg-orange-50/50 transition group">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-9 h-9 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-sm">📅</div>
+                                <div>
+                                    <h5 class="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-orange-600">Portal Rapat</h5>
+                                    <p class="text-[11px] text-slate-500">Kelola jadwal dan notulen rapat</p>
+                                </div>
+                            </div>
+                            <span class="text-slate-400 group-hover:text-orange-600">→</span>
+                        </a>
+
+                        <a href="https://kontrak.ptbsssatu.id" target="_blank" class="flex items-center justify-between p-3 rounded-xl border border-slate-200 hover:border-orange-500 hover:bg-orange-50/50 transition group">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-9 h-9 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold text-sm">📊</div>
+                                <div>
+                                    <h5 class="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-orange-600">Pemantauan Kontrak</h5>
+                                    <p class="text-[11px] text-slate-500">Monitor progres dan dokumen kerja</p>
+                                </div>
+                            </div>
+                            <span class="text-slate-400 group-hover:text-orange-600">→</span>
+                        </a>
+
+                        <a href="https://invoice.ptbsssatu.id" target="_blank" class="flex items-center justify-between p-3 rounded-xl border border-slate-200 hover:border-orange-500 hover:bg-orange-50/50 transition group">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-9 h-9 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center font-bold text-sm">💼</div>
+                                <div>
+                                    <h5 class="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-orange-600">Portal Invoice</h5>
+                                    <p class="text-[11px] text-slate-500">Kelola penagihan dan keuangan</p>
+                                </div>
+                            </div>
+                            <span class="text-slate-400 group-hover:text-orange-600">→</span>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-gray-400 py-12 border-t border-slate-800">
-        <div class="container mx-auto px-6 text-center text-sm">
-            <p>&copy; 2026 PT Banggai Sentral Sulawesi. All rights reserved.</p>
-        </div>
+
+    <!-- ========================================== -->
+    <!-- 4. FOOTER KORPORAT -->
+    <!-- ========================================== -->
+    <footer class="bg-slate-900 text-slate-400 py-6 text-center text-xs border-t border-slate-800">
+        <p>&copy; 2026 PT Banggai Sentral Sulawesi. All Rights Reserved. Portal Internal Manajemen.</p>
     </footer>
 
 </body>
