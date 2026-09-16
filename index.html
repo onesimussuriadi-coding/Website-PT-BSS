@@ -25,7 +25,7 @@
                 <div class="flex items-center space-x-4">
                     <a href="index.html" class="text-sm font-medium text-slate-300 hover:text-white px-3 py-2 rounded-md">Beranda</a>
                     
-                    <!-- Dropdown Portal Aplikasi (Berisi Akses Sistem Utama) -->
+                    <!-- Dropdown Portal Aplikasi -->
                     <div class="relative group">
                         <button class="flex items-center space-x-1 text-sm font-medium bg-orange-600 hover:bg-orange-500 text-white px-4 py-2 rounded-lg transition shadow-sm">
                             <span>Portal Aplikasi</span>
@@ -52,25 +52,32 @@
 
 
     <!-- ========================================== -->
-    <!-- 2. KONTEN UTAMA (SATU LAYAR / COMPACT) -->
+    <!-- 2. KONTEN UTAMA (COMPACT & UTUH) -->
     <!-- ========================================== -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full space-y-6">
         
         <!-- A. HEADER: Motivasi & Prinsip Kerja Korporat -->
-        <div class="bg-gradient-to-r from-slate-900 to-slate-800 text-white rounded-2xl p-6 md:p-7 shadow-lg border-l-8 border-orange-500">
-            <span class="text-orange-400 font-semibold text-xs uppercase tracking-widest">Prinsip Kerja Korporat PT BSS</span>
-            <h2 class="text-xl sm:text-2xl font-bold mt-1.5 mb-2 leading-snug">
-                "Bekerja dengan Integritas Tinggi, Menjunjung Kejujuran, Serta Efektif dan Efisien dalam Setiap Langkah Operasional."
-            </h2>
-            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                Setiap tugas dan amanah adalah wujud komitmen terhadap perusahaan dan mitra industri. Utamakan transparansi dan ketepatan untuk hasil kerja yang unggul.
-            </p>
+        <div class="bg-gradient-to-r from-slate-900 to-slate-800 text-white rounded-2xl p-6 md:p-7 shadow-lg border-l-8 border-orange-500 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div>
+                <span class="text-orange-400 font-semibold text-xs uppercase tracking-widest">Prinsip Kerja Korporat PT BSS</span>
+                <h2 class="text-lg sm:text-xl font-bold mt-1 mb-1.5 leading-snug">
+                    "Bekerja dengan Integritas Tinggi, Menjunjung Kejujuran, Serta Efektif dan Efisien dalam Setiap Langkah Operasional."
+                </h2>
+                <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                    Setiap tugas dan amanah adalah wujud komitmen terhadap perusahaan dan mitra industri. Utamakan transparansi dan ketepatan untuk hasil kerja yang unggul.
+                </p>
+            </div>
+            <!-- Tombol Edit Admin (Placeholder untuk akses manajemen) -->
+            <button onclick="alert('Fitur panel edit admin dapat diintegrasikan menggunakan autentikasi khusus.')" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs px-3.5 py-2 rounded-lg font-medium flex items-center shrink-0 transition">
+                <svg class="w-3.5 h-3.5 mr-1.5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                Edit Konten (Admin)
+            </button>
         </div>
 
-        <!-- B. LAYOUT DUA KOLOM: Kiri (Visi Misi) & Kanan (Pengumuman) -->
+        <!-- B. LAYOUT DUA KOLOM: Kiri (Visi Misi UTUH) & Kanan (Pengumuman) -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
             
-            <!-- KOLOM KIRI (7 Kolom): Visi & Misi Ringkas -->
+            <!-- KOLOM KIRI (7 Kolom): Visi & Misi UTUH 100% -->
             <div class="lg:col-span-7 bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
@@ -81,25 +88,46 @@
                         <span class="text-[11px] bg-emerald-50 text-emerald-800 px-2.5 py-1 rounded-full font-medium">PT Banggai Sentral Sulawesi</span>
                     </div>
 
-                    <!-- Visi -->
+                    <!-- Kotak Visi Utuh -->
                     <div class="mb-4 bg-slate-50 p-3.5 rounded-xl border border-slate-100">
-                        <span class="text-[11px] font-bold text-emerald-900 uppercase tracking-wider block mb-1">Vision</span>
-                        <p class="italic text-xs text-slate-700 mb-1.5 font-medium">
+                        <span class="text-[11px] font-bold text-emerald-900 uppercase tracking-wider block mb-1">VISION / VISI</span>
+                        <p class="italic text-xs text-slate-700 mb-1 font-medium">
                             "To be one of excellence and reliable Contractor Company in Indonesia at the competitive price by culturing occupational Health, Safety and Environment in every activity."
                         </p>
                         <p class="text-[11px] text-slate-600 leading-relaxed">
-                            Menjadi salah satu Perusahaan Kontraktor yang baik dan terpercaya di Indonesia pada tingkat harga yang bersaing dengan membudayakan K3L di setiap aktivitasnya.
+                            Menjadi salah satu Perusahaan Kontraktor yang baik dan terpercaya di Indonesia pada tingkat harga yang bersaing dengan membudayakan keselamatan dan kesehatan kerja serta lingkungan disetiap aktivitasnya.
                         </p>
                     </div>
 
-                    <!-- Misi Singkat -->
+                    <!-- Kotak Misi Utuh (Tanpa ada yang disingkat) -->
                     <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
-                        <span class="text-[11px] font-bold text-emerald-900 uppercase tracking-wider block mb-1.5">Mission (Poin Utama)</span>
-                        <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-inside leading-relaxed">
-                            <li>Membangun jaringan pemasaran domestik & tim manajemen SDM yang kuat.</li>
-                            <li>Menjadi kontraktor unggul di bidang konstruksi, general service, & energi.</li>
-                            <li>Melaksanakan diversifikasi usaha & Sistem Manajemen Mutu serta K3L dengan benar.</li>
-                        </ul>
+                        <span class="text-[11px] font-bold text-emerald-900 uppercase tracking-wider block mb-2">MISSION / MISI (Lengkap)</span>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-[10.5px] text-slate-700 leading-relaxed">
+                            <!-- Bahasa Inggris -->
+                            <div>
+                                <strong class="text-slate-900 block mb-1">English:</strong>
+                                <ol class="list-decimal list-inside space-y-1">
+                                    <li>To build and develop strong channel in marketing for domestic market;</li>
+                                    <li>To build a strong and good Management team through Human Resources Development;</li>
+                                    <li>To be one of excellence Contractor in Constructions and General Services;</li>
+                                    <li>To be a part of Energy Industry Development in Eastern Part of Indonesia;</li>
+                                    <li>To develop business diversification within 5 (five) years;</li>
+                                    <li>To implement Quality Occupational Safety, Health and Environment Management System with properly.</li>
+                                </ol>
+                            </div>
+                            <!-- Bahasa Indonesia -->
+                            <div class="border-t md:border-t-0 md:border-l border-slate-200 pt-2 md:pt-0 md:pl-3">
+                                <strong class="text-slate-900 block mb-1">Bahasa Indonesia:</strong>
+                                <ol class="list-decimal list-inside space-y-1">
+                                    <li>Membangun dan mengembangkan jaringan pemasaran yang kuat untuk pasar domestic;</li>
+                                    <li>Membangun suatu tim Manajemen yang kuat dan baik melalui pengembangan Sumber Daya Manusia;</li>
+                                    <li>Menjadi salah satu Kontraktor yang baik dalam bidang Konstruksi dan Jasa Umum;</li>
+                                    <li>Menjadi bagian dari pengembangan Industri Energi di bagian Timur Indonesia;</li>
+                                    <li>Mengembangkan diversifikasi usaha dalam waktu 5 (lima) tahun mendatang;</li>
+                                    <li>Melaksanakan Sistem Manajemen Mutu dan K3L (Keselamatan dan Kesehatan Kerja serta Lingkungan) dengan benar.</li>
+                                </ol>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -132,7 +160,7 @@
                 </div>
 
                 <div class="mt-4 pt-3 border-t border-slate-100 text-center">
-                    <span class="text-[11px] text-slate-400">💡 Tips: Semua sistem operasional terpusat di menu navigasi atas.</span>
+                    <span class="text-[11px] text-slate-400">💡 Portal internal ini dirancang khusus untuk manajemen & operasional PT BSS.</span>
                 </div>
             </div>
 
