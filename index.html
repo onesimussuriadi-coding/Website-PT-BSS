@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Banggai Sentral Sulawesi - Konstruksi & General Service</title>
+    <!-- Tailwind CSS untuk Desain Modern -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header / Navbar -->
+    <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-wider">
+                PT <span class="text-orange-500">BSS</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#home" class="hover:text-orange-400 transition">Beranda</a>
+                <a href="#about" class="hover:text-orange-400 transition">Tentang Kami</a>
+                <a href="#services" class="hover:text-orange-400 transition">Layanan</a>
+                <a href="#contact" class="hover:text-orange-400 transition">Kontak</a>
+            </nav>
+            <div>
+                <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-md text-sm font-semibold transition shadow">Hubungi Kami</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-slate-900 text-white py-24 md:py-32">
+        <div class="absolute inset-0 opacity-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d0fbb18f06f5?auto=format&fit=crop&q=80&w=1600');"></div>
+        <div class="container mx-auto px-6 relative z-10 max-w-4xl text-center">
+            <span class="bg-orange-500 text-xs uppercase tracking-widest font-semibold px-3 py-1 rounded-full">Mitra Industri Terpercaya</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight">Solusi Konstruksi, Pengadaan & Manpower Profesional</h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-8">Melayani jasa konstruksi, sewa alat berat, general service, serta trust transport & manpower terpadu untuk mendukung proyek industri Anda.</p>
+            <div class="flex justify-center gap-4">
+                <a href="#services" class="bg-orange-500 hover:bg-orange-600 font-semibold px-8 py-3 rounded-md shadow-lg transition">Jelajahi Layanan</a>
+                <a href="#contact" class="bg-white hover:bg-gray-100 text-slate-900 font-semibold px-8 py-3 rounded-md shadow-lg transition">Konsultasi Proyek</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 container mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-slate-900">Layanan Utama Kami</h2>
+            <p class="text-gray-600 mt-2">Komitmen pada standar keselamatan kerja (K3) dan kualitas operasional terbaik.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Layanan 1 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center font-bold text-xl mb-6">01</div>
+                <h3 class="text-xl font-bold mb-3 text-slate-900">Jasa Konstruksi</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Pembangunan infrastruktur sipil, fasilitas industri, dan pekerjaan konstruksi terintegrasi.</p>
+            </div>
+            <!-- Layanan 2 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center font-bold text-xl mb-6">02</div>
+                <h3 class="text-xl font-bold mb-3 text-slate-900">Sewa & Pengadaan</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Penyediaan unit alat berat, vacuum truck, dan pengadaan logistik kebutuhan industri.</p>
+            </div>
+            <!-- Layanan 3 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center font-bold text-xl mb-6">03</div>
+                <h3 class="text-xl font-bold mb-3 text-slate-900">General Service</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Perawatan fasilitas, maintenance teknis, serta dukungan operasional proyek migas dan energi.</p>
+            </div>
+            <!-- Layanan 4 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center font-bold text-xl mb-6">04</div>
+                <h3 class="text-xl font-bold mb-3 text-slate-900">Manpower & Transport</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Penyediaan tenaga kerja profesional handal (*trust transport & manpower*) bersertifikasi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-gray-400 py-12 border-t border-slate-800">
+        <div class="container mx-auto px-6 text-center text-sm">
+            <p>&copy; 2026 PT Banggai Sentral Sulawesi. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
