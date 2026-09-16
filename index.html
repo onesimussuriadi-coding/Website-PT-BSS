@@ -26,7 +26,7 @@
                     </span>
                 </div>
 
-                <!-- KANAN: Menu Portal Aplikasi (Sistem Klik Stabil) -->
+                <!-- KANAN: Menu Portal Aplikasi -->
                 <div class="flex items-center space-x-4">
                     <div class="relative">
                         <!-- Tombol Pemicu Klik -->
@@ -44,7 +44,6 @@
                             <a href="https://kontrak.ptbsssatu.id" target="_blank" class="flex items-center px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 transition font-medium">
                                 <span class="w-2 h-2 bg-emerald-500 rounded-full mr-2"></span> Pemantauan Kontrak
                             </a>
-                            <!-- Link Portal Invoice diarahkan ke Streamlit yang benar -->
                             <a href="https://invoiceptbss.streamlit.app" target="_blank" class="flex items-center px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 transition font-medium">
                                 <span class="w-2 h-2 bg-amber-500 rounded-full mr-2"></span> Portal Invoice
                             </a>
@@ -58,7 +57,7 @@
 
 
     <!-- ========================================== -->
-    <!-- 2. KONTEN UTAMA (COMPACT & NARASI ISO) -->
+    <!-- 2. KONTEN UTAMA -->
     <!-- ========================================== -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full space-y-6">
         
@@ -73,11 +72,11 @@
                     Dalam melaksanakan seluruh aktivitas kerja dan pelayanan, setiap jajaran manajemen dan staf senantiasa <strong class="text-blue-900 font-semibold">patuh dan taat sepenuhnya terhadap pedoman serta standar ISO 9001, ISO 14001, dan ISO 45001</strong> guna menjamin mutu, keselamatan, dan kelestarian lingkungan.
                 </p>
             </div>
-            <!-- Tombol Edit Admin -->
-            <button onclick="alert('Fitur panel edit admin dapat diintegrasikan menggunakan autentikasi khusus.')" class="bg-white hover:bg-blue-50 text-blue-700 border border-blue-200 text-xs px-3.5 py-2 rounded-lg font-semibold flex items-center shrink-0 transition shadow-sm">
+            <!-- Tombol Mengarah ke Halaman Login Admin -->
+            <a href="admin.html" class="bg-white hover:bg-blue-50 text-blue-700 border border-blue-200 text-xs px-3.5 py-2 rounded-lg font-semibold flex items-center shrink-0 transition shadow-sm">
                 <svg class="w-3.5 h-3.5 mr-1.5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
                 Edit Konten (Admin)
-            </button>
+            </a>
         </div>
 
         <!-- B. LAYOUT DUA KOLOM: Kiri (Visi Misi UTUH) & Kanan (Pengumuman) -->
@@ -183,7 +182,7 @@
     </footer>
 
     <!-- ========================================== -->
-    <!-- JAVASCRIPT: PENGATUR KLIK DROPDOWN STABIL -->
+    <!-- JAVASCRIPT: PENGATUR KLIK DROPDOWN -->
     <!-- ========================================== -->
     <script>
         function toggleDropdown(event) {
@@ -192,7 +191,6 @@
             menu.classList.toggle('hidden');
         }
 
-        // Menutup dropdown jika pengguna mengklik di luar area menu
         window.addEventListener('click', function() {
             const menu = document.getElementById('dropdownMenu');
             if (!menu.classList.contains('hidden')) {
